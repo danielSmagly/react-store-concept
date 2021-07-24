@@ -6,8 +6,8 @@ const drawerWidth = 0;
 export default makeStyles((theme) => ({
   appBar: {
     boxShadow: 'none',
-    
-    background: 'rgba(255, 255, 255,0.91)',
+     
+    background: 'rgba(255, 255, 255,0.90)',
   },
   title: {
     flexGrow: 1,

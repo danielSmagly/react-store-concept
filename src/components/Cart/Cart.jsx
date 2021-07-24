@@ -10,7 +10,15 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
     
     const classes = useStyles();
     const EmptyCart = () => (
-        <Typography variant="subtitle1">You don't have any items in your shopping cart yet.</Typography>
+        <Typography variant="subtitle1">You don't have any artwork in your cart yet.
+        <br/>
+        <br/>
+            <Button component={Link} to='/' className={classes.checkoutButton} size="medium" type="button" variant="contained" color="primary">
+                Return to homepage
+            </Button>
+        </Typography>
+        
+
     );
 
     const FilledCart = () => (
@@ -49,9 +57,7 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
       return (
         <Container>
             <div className={classes.toolbar}/>
-            <Typography className={classes.title} variant="h3" gutterBottom>
-                Your Shopping Cart
-            </Typography>
+            <Typography className={classes.title} variant="h3" gutterBottom>Artwork In Cart</Typography>
             { !cart.line_items.length ? <EmptyCart/> : <FilledCart/> }
         </Container>
     );
