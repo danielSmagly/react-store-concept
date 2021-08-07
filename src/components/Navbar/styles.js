@@ -5,9 +5,9 @@ const drawerWidth = 0;
 
 export default makeStyles((theme) => ({
   appBar: {
-    boxShadow: 'none',
+    boxShadow: '.1em',
      
-    background: 'rgba(255, 255, 255,0.90)',
+    background: 'rgba(255, 255, 255)',
   },
   title: {
     flexGrow: 1,
@@ -24,6 +24,9 @@ export default makeStyles((theme) => ({
   },
   growIcon2: {
     flexGrow: .1,
+    alignItems: 'center',
+    display: 'flex',
+    textDecoration: 'none'
   },
   
   

@@ -6,7 +6,8 @@ export default makeStyles(() => ({
       },
       media: {
         height: 100,
-        paddingTop: '56.25%', // 16:9
+        paddingTop: '79.25%', // 16:9
+        elevation: 0
       },
       cardActions: {
         display: 'flex',
